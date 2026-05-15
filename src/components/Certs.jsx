@@ -4,7 +4,7 @@ import Cloud from "../assets/cloud.png";
 import SecureCloud from "../assets/secure-cloud.png";
 import HTML_CSS from "../assets/html-css.png";
 import JS from "../assets/javascript.png";
-import MySQL from "../assets/mysql.png";
+import MySQL from "../assets/MySQL.png";
 import ReactJS from "../assets/reactJS.png";
 
 const certifications = [
