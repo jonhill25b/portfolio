@@ -1,33 +1,15 @@
 import Contact from '../components/Contact';
+import TaskManagerIMG from '../assets/task-manager-img.png';
 
 const allProjects = [
   {
-    title: "Insight Onboarding System",
+    title: "TASK_ENGINE Management Core",
     description:
-      "A secure IT equipment procurement and access management portal built for streamlined employee onboarding, currently used by Red Cup IT for equipment deployment.",
-    tech: ["React", "MySQL", "Tailwind"],
-    image: "/project-one.jpg", 
-  },
-  {
-    title: "CMMC Compliance Tracker",
-    description:
-      "A dashboard designed to track progress toward Department of Defense cybersecurity maturity certification, ensuring 98% compliance across 4,000+ user accounts.",
-    tech: ["React", "Secure API", "Node.js"],
-    image: "/project-two.jpg",
-  },
-  {
-    title: "PowerShell Automation Suite",
-    description:
-      "A collection of automated scripts developed to monitor user accounts and reduce administrative delays for global remote operations.",
-    tech: ["PowerShell", "Automation", "Security"],
-    image: "/project-three.jpg",
-  },
-  {
-    title: "Inventory Asset Manager",
-    description:
-      "A secure management system designed to maintain absolute accountability for $1.2M in high-value IT infrastructure with real-time audit logs.",
-    tech: ["MySQL", "React", "Authentication"],
-    image: "/project-four.jpg",
+      "A secure, production-grade task allocation system engineered with full CRUD operations and restricted endpoints. Features custom JSON Web Token (JWT) user authentication sessions and a responsive layout grid.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind v4"],
+    image: TaskManagerIMG,
+    liveLink: "https://task-manager-1-8zfg.onrender.com",
+    gitLink: "https://github.com/jonhill25b/Task-Manager",
   }
 ];
 
@@ -57,11 +39,13 @@ export default function Projects() {
               key={index}
               className="group relative overflow-hidden rounded-2xl bg-zinc-900/50 border border-zinc-800 transition-all hover:border-zinc-700"
             >
-              <div className="aspect-video bg-zinc-800 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-zinc-700 to-zinc-900 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                   <span className="text-zinc-500 text-xs italic">Project Visual Coming Soon</span>
-                </div>
-              </div>
+            <div className="aspect-video bg-zinc-950 overflow-hidden relative flex items-center justify-center p-4">
+              <img 
+                src={project.image} 
+                alt={`${project.title} screenshot`}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl group-hover:scale-102 transition-transform duration-500"
+              />
+            </div>
 
               {/* Content */}
               <div className="p-6">
@@ -81,13 +65,27 @@ export default function Projects() {
                 <p className="text-zinc-400 text-sm leading-relaxed mb-6">
                   {project.description}
                 </p>
-                <div className="flex gap-4">
+                
+                {/* INTERACTIVE LINK ACTIONS */}
+                <div className="flex gap-6 items-center border-t border-zinc-800/60 pt-4">
                   <a
-                    href="#"
-                    className="text-sm font-semibold text-amber-500 hover:text-amber-400 transition-colors"
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-bold uppercase tracking-wider text-amber-500 hover:text-amber-400 transition-colors"
                   >
-                    View Case Study &rarr;
+                    Launch Application &rarr;
                   </a>
+                  {project.gitLink !== "#" && (
+                    <a
+                      href={project.gitLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300 transition-colors"
+                    >
+                      Source Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

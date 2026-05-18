@@ -1,24 +1,22 @@
+import TaskManagerIMG from "../assets/task-manager-img.png";
+
 const featuredProjects = [
   {
-    title: "Insight Onboarding System",
+    title: "TASK_ENGINE Management Core",
     description:
-      "A secure IT equipment procurement and access management portal built for streamlined employee onboarding.",
-    tech: ["React", "MySQL", "Tailwind"],
-    image: "/project-one.jpg", // Placeholder for now
-  },
-  {
-    title: "CMMC Compliance Tracker",
-    description:
-      "A dashboard designed to track progress toward Department of Defense cybersecurity maturity certification.",
-    tech: ["React", "Secure API", "Node.js"],
-    image: "/project-two.jpg",
-  },
+      "A secure, production-grade task allocation system engineered with full CRUD operations and restricted endpoints. Features custom JSON Web Token (JWT) user authentication sessions and a responsive layout grid.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind v4"],
+    image: TaskManagerIMG,
+    liveLink: "https://task-manager-1-8zfg.onrender.com",
+    gitLink: "https://github.com/jonhill25b/Task-Manager",
+  }
 ];
 
 export default function ProjectPreview() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
@@ -42,13 +40,18 @@ export default function ProjectPreview() {
               key={index}
               className="group relative overflow-hidden rounded-2xl bg-zinc-900/50 border border-zinc-800 transition-all hover:border-zinc-700"
             >
-              <div className="aspect-video bg-zinc-800 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-zinc-700 to-zinc-900 group-hover:scale-105 transition-transform duration-500" />
+              {/* Dynamic Image Wrapper Container */}
+              <div className="aspect-video bg-zinc-950 overflow-hidden relative flex items-center justify-center p-4">
+                <img 
+                  src={project.image} 
+                  alt={`${project.title} screenshot`}
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl group-hover:scale-102 transition-transform duration-500"
+                />
               </div>
 
-              {/* Content */}
+              {/* Content Card Body */}
               <div className="p-6">
-                <div className="flex gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((t) => (
                     <span
                       key={t}
@@ -64,13 +67,30 @@ export default function ProjectPreview() {
                 <p className="text-zinc-400 text-sm leading-relaxed mb-6">
                   {project.description}
                 </p>
-                <a
-                  href="#"
-                  className="text-sm font-semibold text-amber-500 group-hover:text-amber-400 transition-colors"
-                >
-                  View Case Study &rarr;
-                </a>
+                
+                {/* Clean, Segmented Call to Action Layout */}
+                <div className="flex gap-6 items-center border-t border-zinc-800/60 pt-4">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-bold uppercase tracking-wider text-amber-500 hover:text-amber-400 transition-colors"
+                  >
+                    Launch Application &rarr;
+                  </a>
+                  {project.gitLink !== "#" && (
+                    <a
+                      href={project.gitLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300 transition-colors"
+                    >
+                      Source Code
+                    </a>
+                  )}
+                </div>
               </div>
+
             </div>
           ))}
         </div>
