@@ -3,9 +3,9 @@ export default function Hero() {
     <div className="relative isolate">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl pt-32 pb-16 sm:pt-48 sm:pb-24 lg:pt-56 lg:pb-32">
-          {/* Status Badge */}
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-4 py-1 text-xs font-bold uppercase tracking-widest text-amber-500 ring-1 ring-amber-500/30">
+          
+          <div className="mb-6 flex justify-center sm:mb-8">
+            <div className="relative rounded-full px-4 py-1 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-amber-500 ring-1 ring-amber-500/30 text-center">
               Active TS/SCI Clearance
             </div>
           </div>

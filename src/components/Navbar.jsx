@@ -62,15 +62,24 @@ export default function Navbar() {
             </a>
           </div>
         </nav>
+
+        {/* Mobile Flyout Menu */}
         <Dialog
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
           className="lg:hidden"
         >
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          {/* Backdrop Blur overlay when menu is active */}
+          <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm" />
+
+          {/* Updated DialogPanel Styling */}
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-zinc-950/95 backdrop-blur-md p-6 sm:max-w-sm border-l border-zinc-900 shadow-2xl">
             <div className="flex items-center justify-between">
-              <Link to="/" className="-m-1.5 p-1.5">
+              <Link
+                to="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-1.5 p-1.5"
+              >
                 <span className="text-xl font-bold text-white tracking-tighter">
                   JH<span className="text-amber-500">.</span>
                 </span>
@@ -85,23 +94,27 @@ export default function Navbar() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-white/10">
-                <div className="space-y-2 py-6">
+              <div className="-my-6 divide-y divide-zinc-800">
+                {/* Vertical Link Stack Layout */}
+                <div className="space-y-3 py-6">
                   <Link
                     to="/"
-                    className="text-sm/6 font-semibold text-white hover:text-amber-400"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-lg py-2 px-3 text-base font-semibold text-white hover:bg-zinc-900 hover:text-amber-400 transition-all"
                   >
                     Home
                   </Link>
                   <Link
                     to="/about"
-                    className="text-sm/6 font-semibold text-white hover:text-amber-400"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-lg py-2 px-3 text-base font-semibold text-white hover:bg-zinc-900 hover:text-amber-400 transition-all"
                   >
                     About
                   </Link>
                   <Link
                     to="/projects"
-                    className="text-sm/6 font-semibold text-white hover:text-amber-400"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-lg py-2 px-3 text-base font-semibold text-white hover:bg-zinc-900 hover:text-amber-400 transition-all"
                   >
                     Projects
                   </Link>
@@ -110,7 +123,7 @@ export default function Navbar() {
                   <a
                     href="/Jonathan_Hill_Resume.pdf"
                     download
-                    className="text-sm font-semibold text-white border border-amber-500/50 px-4 py-2 rounded-md hover:bg-amber-500/10 transition-all"
+                    className="inline-block text-center w-full text-sm font-semibold text-white border border-amber-500/50 px-4 py-3 rounded-md hover:bg-amber-500/10 transition-all"
                   >
                     Download Resume <span aria-hidden="true">&darr;</span>
                   </a>
