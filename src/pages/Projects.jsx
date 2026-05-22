@@ -3,7 +3,7 @@ import TaskManagerIMG from '../assets/task-manager-img.png';
 
 const allProjects = [
   {
-    title: "TASK_ENGINE Management Core",
+    title: "Task Engine",
     description:
       "A secure, production-grade task allocation system engineered with full CRUD operations and restricted endpoints. Features custom JSON Web Token (JWT) user authentication sessions and a responsive layout grid.",
     tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind v4"],

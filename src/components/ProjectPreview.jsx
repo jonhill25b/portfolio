@@ -1,8 +1,9 @@
 import TaskManagerIMG from "../assets/task-manager-img.png";
+import { Link } from "react-router-dom";
 
 const featuredProjects = [
   {
-    title: "TASK_ENGINE Management Core",
+    title: "Task Engine",
     description:
       "A secure, production-grade task allocation system engineered with full CRUD operations and restricted endpoints. Features custom JSON Web Token (JWT) user authentication sessions and a responsive layout grid.",
     tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind v4"],
@@ -25,12 +26,12 @@ export default function ProjectPreview() {
             </h2>
             <p className="text-3xl font-bold text-white">Selected Projects</p>
           </div>
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="text-amber-500 hover:text-amber-400 font-semibold text-sm flex items-center gap-1 transition-all"
           >
             View all work <span>&rarr;</span>
-          </a>
+          </Link>
         </div>
 
         {/* Project Grid */}

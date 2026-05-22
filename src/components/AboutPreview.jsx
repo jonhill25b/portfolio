@@ -1,4 +1,5 @@
 import ProfilePicture from "../assets/ProfilePicture.png";
+import { Link } from "react-router-dom";
 
 export default function AboutPreview() {
   return (
@@ -80,12 +81,12 @@ export default function AboutPreview() {
               </li>
             </ul>
 
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="inline-flex items-center justify-center px-6 py-3 border border-amber-500/50 text-amber-500 rounded-md font-semibold hover:bg-amber-500/10 transition-all"
             >
               Read My Full Story
-            </a>
+            </Link>
           </div>
         </div>
       </div>
