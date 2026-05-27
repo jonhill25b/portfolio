@@ -1,7 +1,17 @@
 import Contact from '../components/Contact';
 import TaskManagerIMG from '../assets/task-manager-img.png';
+import AIChatIMG from '../assets/ai-client-img.png';
 
 const allProjects = [
+  {
+    title: "AI Client Console",
+    description:
+      "A stateful, responsive AI chat interface featuring secure asynchronous message execution, locally persisted conversational logs, and custom-tuned linear dark mode styling.",
+    tech: ["React", "Node.js", "OpenAI API", "Tailwind v4", "Axios"],
+    image: AIChatIMG,
+    liveLink: "https://ai-chat-client-k9t7.onrender.com",
+    gitLink: "https://github.com/jonhill25b/ai-client",
+  },
   {
     title: "Task Engine",
     description:
