@@ -23,7 +23,8 @@ A modern, high-performance professional portfolio designed to showcase secure so
 
 ## 📂 Repository File Blueprint
 
-```portfolio-site/
+```text
+portfolio-site/
 ├── src/
 │   ├── assets/          # High-resolution application screenshots
 │   ├── components/      # Reusable UI elements (Contact, ProjectPreview)
@@ -31,7 +32,8 @@ A modern, high-performance professional portfolio designed to showcase secure so
 │   ├── App.jsx          # Routing and application initialization
 │   └── index.css        # Tailwind v4 master compilation stylesheet
 ├── postcss.config.js    # PostCSS build tool configuration bridge
-└── vite.config.js       # Vite bundler parameters```
+└── vite.config.js       # Vite bundler parameters
+```
 
 ---
 
