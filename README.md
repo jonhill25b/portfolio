@@ -37,6 +37,19 @@ portfolio-site/
 
 ---
 
+## 🌐 Live Production Access & Features
+
+The live application is fully deployed and accessible via the web. 
+
+- **Production Deployment Link:** [View Live Site](https://jhill.app)
+
+### Key User Navigation Features:
+- **Interactive Project Ledger:** A centralized, responsive dashboard highlighting full-stack engineering assets with direct links to production instances and corresponding source repositories.
+- **Asynchronous Correspondence Terminal:** An integrated contact engine allowing seamless communication transit directly from the client interface.
+- **Fluid Workstation Optimization:** Native breakpoints optimized for cross-platform validation, adapting flawlessly across widescreen layouts and mobile displays.
+
+---
+
 ## 🚀 Local Installation & Deployment
 
 To clone this repository and run the development compilation pipeline locally, execute the following commands in your CLI:
