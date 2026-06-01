@@ -1,16 +1,66 @@
-# React + Vite
+# Personal Engineering Portfolio & Technical Registry
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance professional portfolio designed to showcase secure software architecture, production-ready MERN stack applications, and technical case studies. Engineered with a clean, responsive dark aesthetic optimized for technical recruiters and engineering leads.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 Tech Stack & Architecture
 
-## React Compiler
+- **Core UI Engine:** React (Vite)
+- **Styling Architecture:** Tailwind CSS v4 (Utilizing modern native utility prefixes and linear gradient mappings)
+- **Transit & Pipelines:** Axios, standard ES Module routing
+- **Deployment & Hosting:** Render (Static Site Pipeline)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚡ Key Architectural Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Dynamic Data Grid Mapping:** Project cards are decoupled into state-driven configurations, enabling seamless asset expansion across both the home page highlights (ProjectPreview.jsx) and the main inventory ledger (Projects.jsx).
+- **Mobile-Responsive Optimization:** Full fluid-grid breakpoint layouts ensuring a seamless review experience across mobile viewports, tablets, and desktop workstations.
+- **Unified Component Architecture:** Features reusable, modular UI components such as isolated navigation structures, contact interface elements, and optimized vector action decks.
+
+---
+
+## 📂 Repository File Blueprint
+
+portfolio-site/
+├── src/
+│   ├── assets/          # High-resolution application screenshots
+│   ├── components/      # Reusable UI elements (Contact, ProjectPreview)
+│   ├── pages/           # View layouts (Home, Projects)
+│   ├── App.jsx          # Routing and application initialization
+│   └── index.css        # Tailwind v4 master compilation stylesheet
+├── postcss.config.js    # PostCSS build tool configuration bridge
+└── vite.config.js       # Vite bundler parameters
+
+---
+
+## 🚀 Local Installation & Deployment
+
+To clone this repository and run the development compilation pipeline locally, execute the following commands in your CLI:
+
+### 1. Clone the Source Infrastructure
+git clone [https://github.com/jonhill25b/portfolio.git](https://github.com/jonhill25b/portfolio.git)
+cd portfolio-site
+
+### 2. Pull Down Dependencies
+npm install
+
+### 3. Launch Local Hot-Reload Server
+npm run dev
+*The local compiler will mount the application at http://localhost:5173.*
+
+---
+
+## 🛠️ Production Build Pipeline
+
+When deploying to hosting environments like Render, the application uses the following production compile properties:
+- **Build Command:** npm run build
+- **Publish Directory:** dist
+
+---
+
+## 📝 Document Version Control
+- **Current Release:** 1.0.0
+- **Author:** Jonathan Hill
+- **Focus:** Transitioning robust technical precision and secure design practices into enterprise civilian software engineering roles.
