@@ -1,6 +1,7 @@
 import Contact from '../components/Contact';
 import TaskManagerIMG from '../assets/task-manager-img.png';
 import AIChatIMG from '../assets/ai-client-img.png';
+import ITTicketIMG from '../assets/it-ticket-system-img.png';
 
 const allProjects = [
   {
@@ -20,7 +21,16 @@ const allProjects = [
     image: TaskManagerIMG,
     liveLink: "https://task-manager-1-8zfg.onrender.com",
     gitLink: "https://github.com/jonhill25b/Task-Manager",
-  }
+  },
+  {
+    title: "IT Ticket System",
+    description:
+      "A full-stack IT support ticket management platform with role-based access control (RBAC), JWT authentication, and a PostgreSQL database. Features ticket CRUD, user management, comments, and assignee workflows.",
+    tech: ["React", "Express", "Prisma", "PostgreSQL", "JWT", "Tailwind v4"],
+    image: ITTicketIMG,
+    liveLink: "https://it-ticket-system-uq54.onrender.com",
+    gitLink: "https://github.com/jonhill25b/IT-Ticket-System",
+  },
 ];
 
 export default function Projects() {
