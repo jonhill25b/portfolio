@@ -1,81 +1,52 @@
-# Personal Engineering Portfolio & Technical Registry
+# Personal Portfolio Site
 
-A modern, high-performance professional portfolio designed to showcase secure software architecture, production-ready MERN stack applications, and technical case studies. Engineered with a clean, responsive dark aesthetic optimized for technical recruiters and engineering leads.
+A modern, responsive professional portfolio showcasing full-stack projects, technical certifications, and professional experience. Built with React, Vite, and Tailwind CSS with light/dark mode support.
 
----
+## About
 
-## 💻 Tech Stack & Architecture
+I am Jonathan Hill, a transitioning U.S. Army Veteran and IT Specialist with 5+ years of experience in enterprise IT operations, cybersecurity compliance, and full-stack development. Active TS/SCI clearance.
 
-- **Core UI Engine:** React (Vite)
-- **Styling Architecture:** Tailwind CSS v4 (Utilizing modern native utility prefixes and linear gradient mappings)
-- **Transit & Pipelines:** Axios, standard ES Module routing
-- **Deployment & Hosting:** Render (Static Site Pipeline)
+Live site: [jhill.app](https://jhill.app)
 
----
+## Tech Stack
 
-## ⚡ Key Architectural Features
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS v3
+- **Routing:** React Router
+- **Deployment:** Vercel
 
-- **Dynamic Data Grid Mapping:** Project cards are decoupled into state-driven configurations, enabling seamless asset expansion across both the home page highlights (ProjectPreview.jsx) and the main inventory ledger (Projects.jsx).
-- **Mobile-Responsive Optimization:** Full fluid-grid breakpoint layouts ensuring a seamless review experience across mobile viewports, tablets, and desktop workstations.
-- **Unified Component Architecture:** Features reusable, modular UI components such as isolated navigation structures, contact interface elements, and optimized vector action decks.
+## Features
 
----
+- Light/dark mode toggle with localStorage persistence
+- Responsive design (mobile, tablet, desktop)
+- Project showcase with live demo and source code links
+- Integrated contact form (Formspree)
+- Animated certifications carousel
 
-## 📂 Repository File Blueprint
+## Local Development
 
-```text
-portfolio-site/
-├── src/
-│   ├── assets/          # High-resolution application screenshots
-│   ├── components/      # Reusable UI elements (Contact, ProjectPreview)
-│   ├── pages/           # View layouts (Home, Projects)
-│   ├── App.jsx          # Routing and application initialization
-│   └── index.css        # Tailwind v4 master compilation stylesheet
-├── postcss.config.js    # PostCSS build tool configuration bridge
-└── vite.config.js       # Vite bundler parameters
-```
-
----
-
-## 🌐 Live Production Access & Features
-
-The live application is fully deployed and accessible via the web. 
-
-- **Production Deployment Link:** [View Live Site](https://jhill.app)
-
-### Key User Navigation Features:
-- **Interactive Project Ledger:** A centralized, responsive dashboard highlighting full-stack engineering assets with direct links to production instances and corresponding source repositories.
-- **Asynchronous Correspondence Terminal:** An integrated contact engine allowing seamless communication transit directly from the client interface.
-- **Fluid Workstation Optimization:** Native breakpoints optimized for cross-platform validation, adapting flawlessly across widescreen layouts and mobile displays.
-
----
-
-## 🚀 Local Installation & Deployment
-
-To clone this repository and run the development compilation pipeline locally, execute the following commands in your CLI:
-
-### 1. Clone the Source Infrastructure
-git clone [https://github.com/jonhill25b/portfolio.git](https://github.com/jonhill25b/portfolio.git)
+### Clone
+git clone https://github.com/jonhill25b/portfolio.git
 cd portfolio-site
 
-### 2. Pull Down Dependencies
+### Install
 npm install
 
-### 3. Launch Local Hot-Reload Server
+### Run
 npm run dev
-*The local compiler will mount the application at http://localhost:5173.*
+Opens at http://localhost:5173
 
----
+### Build
+npm run build
+Output: dist/
 
-## 🛠️ Production Build Pipeline
+## Deployment
 
-When deploying to hosting environments like Render, the application uses the following production compile properties:
+Hosted on Vercel. Push to main branch auto-deploys.
+
 - **Build Command:** npm run build
 - **Publish Directory:** dist
 
----
+## Author
 
-## 📝 Document Version Control
-- **Current Release:** 1.0.0
-- **Author:** Jonathan Hill
-- **Focus:** Transitioning robust technical precision and secure design practices into enterprise civilian software engineering roles.
+Jonathan Hill — [GitHub](https://github.com/jonhill25b) | [LinkedIn](https://www.linkedin.com/in/jonathan-hill32/)
