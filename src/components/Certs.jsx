@@ -53,7 +53,7 @@ const certifications = [
     name: "React JS Framework Developer",
     issuer: "CoITB",
     icon: <img src={ReactJS} alt="ReactJS Logo" />,
-    link: "https://www.credly.com/badges/49219db2-03dc-4807-a634-d48ef00677f3/public_url",
+    link: "https://www.credly.com/badges/49219db2-03dc-4807-a634-d48ef006773f/public_url",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Certs() {
   const doubledCerts = [...certifications, ...certifications];
 
   return (
-    <section className="pb-12">
+    <section className="pb-12 bg-white dark:bg-zinc-950 transition-colors duration-300">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="flex flex-col items-center mb-8">
           <h2 className="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase mb-4">
@@ -85,12 +85,12 @@ export default function Certs() {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mx-4 w-64 p-6 bg-zinc-900/50 border border-zinc-800 rounded-xl hover:border-amber-500 hover:scale-105 transition-all group cursor-pointer"
+                className="inline-block mx-4 w-64 p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-amber-500 hover:scale-105 transition-all group cursor-pointer"
               >
                 <div className="text-3xl mb-4 grayscale group-hover:grayscale-0 transition-all">
                   {cert.icon}
                 </div>
-                <h3 className="text-white font-bold truncate text-sm">
+                <h3 className="text-zinc-900 dark:text-white font-bold truncate text-sm transition-colors duration-300">
                   {cert.name}
                 </h3>
                 <p className="text-zinc-500 text-xs">{cert.issuer}</p>

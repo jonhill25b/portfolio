@@ -7,7 +7,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Move half the width (the first set of certs) */
+    transform: translateX(-50%);
   }
 }
 
@@ -17,7 +17,6 @@
   animation: scroll 30s linear infinite;
 }
 
-/* Optional: Pause on hover so people can actually read your certs! */
 .animate-scroll:hover {
   animation-play-state: paused;
 }
